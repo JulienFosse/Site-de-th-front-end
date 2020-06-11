@@ -1,0 +1,111 @@
+$colorgradient1: rgba(8, 242, 96, 0.4);
+$colorgradient2: rgba(7, 117, 230, 0.6);
+$fontfamily: "Lato",
+sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// header ///////////////////////////////////////////////////////////////////
+header {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background: linear-gradient($colorgradient1, $colorgradient2), url(./images/header.jpg);
+}
+
+.hometitle {
+    position: relative;
+    top: 30vh;
+    h1 {
+        font-family: $fontfamily;
+        color: white;
+        letter-spacing: -1px;
+        font-weight: 400;
+        word-spacing: 8px;
+        font-size: 340%;
+        span {
+            font-weight: 700;
+        }
+    }
+    p {
+        color: white;
+    }
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 10px;
+    transition: background-color 1s, color 1s, border-color 1s;
+}
+
+.btn-full {
+    background-color: azure;
+    color: #5ee077;
+    margin-right: 10px;
+}
+
+.btn-full:hover {
+    background-color: #5ee077;
+    color: white;
+}
+
+.btn-ghost {
+    border: solid white 1px;
+    color: white;
+}
+
+.btn-ghost:hover {
+    background-color: #5ee077;
+    border-color: #5ee077;
+    color: white;
+}
+
+// section 1 /////////////////////////////////////////////////////////////////////////
+.section1 {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    h2 {
+        font-family: $fontfamily;
+        color: #333333;
+        letter-spacing: -1px;
+        font-weight: 400;
+        word-spacing: 8px;
+        font-size: 250%;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    h2:after {
+        display: block;
+        height: 2px;
+        width: 100px;
+        background-color: green;
+        content: "";
+        margin: 10px auto 10px auto;
+    }
+    i {
+        font-size: 34px;
+        color: #0c950c;
+    }
+    h3 {
+        font-size: 160%;
+    }
+    p {
+        font-size: 12px;
+        line-height: 24px;
+        font-weight: 300;
+    }
+    .produits-plus {
+        margin: 20px 0px;
+    }
+    .produits-plus:hover {
+        transform: translateX(20px);
+    }
+}
