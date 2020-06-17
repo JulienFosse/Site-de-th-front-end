@@ -1,9 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sanchez:ital@0;1&display=swap");
 body {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: -1px;
+  font-weight: 400;
+  word-spacing: 8px;
+  font-family: "Lato", sans-serif;
 }
 
 header {
@@ -20,11 +31,7 @@ header {
 }
 
 .hometitle h1 {
-  font-family: "Lato", sans-serif;
   color: white;
-  letter-spacing: -1px;
-  font-weight: 400;
-  word-spacing: 8px;
   font-size: 340%;
 }
 
@@ -66,17 +73,17 @@ header {
   color: white;
 }
 
+.section1 {
+  padding-bottom: 70px;
+}
+
 .section1 img {
   max-width: 100%;
   height: auto;
 }
 
 .section1 h2 {
-  font-family: "Lato", sans-serif;
   color: #333333;
-  letter-spacing: -1px;
-  font-weight: 400;
-  word-spacing: 8px;
   font-size: 250%;
   text-align: center;
   margin-top: 40px;
@@ -114,5 +121,296 @@ header {
 .section1 .produits-plus:hover {
   -webkit-transform: translateX(20px);
           transform: translateX(20px);
+}
+
+.section2 {
+  background-color: #cdf6e1;
+  height: 100vh;
+}
+
+.section2 h2 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.section2 h2:after {
+  display: block;
+  height: 2px;
+  width: 100px;
+  background-color: green;
+  content: "";
+  margin: 10px auto 10px auto;
+}
+
+.section2 h4 {
+  text-align: center;
+}
+
+.famille-the {
+  background-color: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.famille-the img {
+  width: 100%;
+}
+
+.section3 h2 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.section3 h2:after {
+  display: block;
+  height: 2px;
+  width: 100px;
+  background-color: green;
+  content: "";
+  margin: 10px auto 10px auto;
+}
+
+.galerie-image {
+  height: 300px;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px;
+}
+
+.galerie-title {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.galerie-title h4 {
+  color: white;
+}
+
+.section4 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(8, 242, 96, 0.4)), to(rgba(7, 117, 230, 0.6))), url(./images/the-paysage.jpg);
+  background: linear-gradient(rgba(8, 242, 96, 0.4), rgba(7, 117, 230, 0.6)), url(./images/the-paysage.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 45vh;
+}
+
+.section4 h2 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.section4 h2:after {
+  display: block;
+  height: 2px;
+  width: 100px;
+  background-color: green;
+  content: "";
+  margin: 10px auto 10px auto;
+}
+
+blockquote {
+  color: white;
+  padding: 5px;
+  font-style: italic;
+  line-height: 130%;
+}
+
+blockquote:before {
+  content: "\201c";
+  font-size: 800%;
+  font-family: 'Sanchez', serif;
+  position: absolute;
+  top: 25px;
+  left: 5px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+cite {
+  color: white;
+  font-size: 90%;
+  margin-top: 20px;
+}
+
+cite img {
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.section5 {
+  height: 80vh;
+}
+
+.section5 h2 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.section5 h2:after {
+  display: block;
+  height: 2px;
+  width: 100px;
+  background-color: green;
+  content: "";
+  margin: 10px auto 10px auto;
+}
+
+.section5 h3 {
+  color: green;
+  font-weight: 400;
+}
+
+.section5 h4 {
+  font-size: 200%;
+  font-weight: 100;
+}
+
+.section5 h4 span {
+  font-size: 50%;
+  font-weight: 100;
+  position: relative;
+  top: -5px;
+  left: 2px;
+}
+
+.section5 .btn {
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 10px;
+  -webkit-transition: background-color 1s, color 1s, border-color 1s;
+  transition: background-color 1s, color 1s, border-color 1s;
+}
+
+.section5 .packs {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.section5 .pack-premium {
+  background-color: #00ad09;
+  color: white;
+}
+
+.section5 .pack-premium h3 {
+  color: white;
+}
+
+.section5 .packs-title {
+  padding: 10px 10px 0px 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.section5 .pack-content ul {
+  list-style: none;
+  padding: 20px;
+  font-weight: 300;
+  line-height: 35px;
+}
+
+.section5 .pack-content ul li i {
+  font-size: 90%;
+  margin-right: 10px;
+}
+
+.section5 .pack-sign-up {
+  text-align: center;
+}
+
+.section5 .pack-sign-up .btn-pack {
+  background-color: green;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.section5 .pack-sign-up a:hover {
+  background-color: rgba(8, 242, 96, 0.4);
+  color: white;
+}
+
+.section6 {
+  background-color: #cfcfcf;
+  height: 90vh;
+}
+
+.section6 h2 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.section6 h2:after {
+  display: block;
+  height: 2px;
+  width: 100px;
+  background-color: green;
+  content: "";
+  margin: 10px auto 10px auto;
+}
+
+.section6 .btn-contact {
+  background-color: green;
+  color: white;
+}
+
+.contact-form {
+  margin-bottom: 10px;
+}
+
+.contact-message {
+  width: 100%;
+}
+
+.num {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.nom {
+  margin-bottom: 20px;
+}
+
+.map {
+  margin-top: 70px;
+  margin-left: 50px;
+}
+
+.paragraphe {
+  margin-bottom: 30px;
+}
+
+input {
+  width: 99%;
+}
+
+footer {
+  background-color: #3d3d3d;
+  color: white;
+  height: 20vh;
+  padding: 20px;
+}
+
+.copyright {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.copyright a {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
